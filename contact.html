@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Parvesh Upholstery Ltd</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="bg-stage" aria-hidden="true">
+    <div class="bg-layer">
+      <div class="orb orb-a"></div>
+      <div class="orb orb-b"></div>
+      <div class="orb orb-c"></div>
+    </div>
+    <div class="bg-noise"></div>
+  </div>
+
+  <header class="nav">
+    <a class="logo" href="index.html">
+      <span class="logo-mark">P</span>
+      <span>Parvesh Upholstery</span>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="about.html">Atelier</a>
+      <a class="active" href="contact.html">Contact</a>
+    </nav>
+    <a class="btn btn-gold" href="#quote">Request a quote</a>
+    <button class="nav-toggle" type="button" aria-label="Open menu">☰</button>
+  </header>
+
+  <section class="page-hero">
+    <span class="eyebrow reveal">Atelier desk</span>
+    <h1 class="reveal">Tell us the piece. We’ll tell you the path.</h1>
+    <p class="lede reveal">Silvertown Road, Hayes, UB3 3BS. Call, WhatsApp, or send photographs through the glass form below.</p>
+  </section>
+
+  <main class="wrap section" style="padding-top:0" id="quote">
+    <div class="grid-2">
+      <form class="contact-card glass reveal" onsubmit="event.preventDefault(); this.querySelector('[data-note]').hidden = false;">
+        <label>Name<input type="text" name="name" required placeholder="Your name"></label>
+        <label>Phone<input type="tel" name="phone" required placeholder="07…"></label>
+        <label>Area
+          <select name="area">
+            <option>Hayes</option>
+            <option>Southall</option>
+            <option>Hounslow</option>
+            <option>Uxbridge</option>
+            <option>Ealing</option>
+            <option>Wembley</option>
+            <option>Slough</option>
+            <option>Other West London</option>
+          </select>
+        </label>
+        <label>Work type
+          <select name="type">
+            <option>Domestic</option>
+            <option>Commercial</option>
+            <option>Vehicle</option>
+            <option>On-site visit</option>
+          </select>
+        </label>
+        <label>Notes<textarea name="notes" rows="4" placeholder="What needs recovering, repairing, or rebuilding?"></textarea></label>
+        <button class="btn btn-gold" type="submit">Send enquiry</button>
+        <p data-note hidden style="margin:0;color:var(--gold-bright)">This is a design prototype — wire the form to email or WhatsApp on the live WordPress build.</p>
+      </form>
+      <aside class="contact-card glass reveal">
+        <span class="eyebrow">Visit</span>
+        <h2 style="margin:16px 0">Hayes workshop</h2>
+        <p>Silvertown Road, Hayes, UB3 3BS. Furniture can be collected, delivered, or assessed on-site for commercial seating that cannot travel.</p>
+        <p>Use the buttons on a live site for Call and WhatsApp. This page is the conversion surface: large, calm, and impossible to miss.</p>
+        <div class="hero-meta" style="margin-top:28px">
+          <div class="meta-chip"><b>Call</b><span>Direct line CTA</span></div>
+          <div class="meta-chip"><b>WhatsApp</b><span>Photo quotes</span></div>
+          <div class="meta-chip"><b>Map</b><span>UB3 3BS</span></div>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="footer wrap">
+    <div class="footer-inner glass">
+      <div>Parvesh Upholstery Ltd · Showcase contact</div>
+      <div>Home · Services · Gallery · Atelier</div>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
